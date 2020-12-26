@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow>
+
+            <TextView
+
+                android:id="@+id/clear"
+                style="@style/Number"
+                android:layout_width="17dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape"
+                android:text="AC"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/backspace"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape"
+                android:scaleType="center"
+                android:src="@drawable/backspace"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/modulo"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape"
+                android:text="%"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/plus"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape"
+                android:text="+"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="7"
+                android:background="@drawable/shape_btn"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/eight"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape_btn"
+                android:text="8"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/nine"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="9"
+                android:background="@drawable/shape_btn"
+                android:textSize="40sp" />
+
+            <TextView
+                android:background="@drawable/shape"
+                android:id="@+id/minus"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:text="-"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/four"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="4"
+                android:background="@drawable/shape_btn"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/five"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="5"
+                android:background="@drawable/shape_btn"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/six"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="6"
+                android:background="@drawable/shape_btn"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/multiply"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape"
+                android:text="*"
+
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/one"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="1"
+                android:background="@drawable/shape_btn"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/two"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="2"
+                android:background="@drawable/shape_btn"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/three"
+
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="3"
+                android:background="@drawable/shape_btn"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/division"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape"
+                android:text="/"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/change_sign"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="+/-"
+                android:background="@drawable/shape"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/zero"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="0"
+                android:background="@drawable/shape_btn"
+                android:textSize="40sp" />
+
+            <TextView
+                android:background="@drawable/shape"
+                android:id="@+id/decimal"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:text="."
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/equals"
+                style="@style/Number"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape"
+                android:text="="
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="268dp"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expression" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
